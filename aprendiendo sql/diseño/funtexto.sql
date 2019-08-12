@@ -6,3 +6,7 @@ SELECT LOWER(nombre) FROM usuarios;
 SELECT CONCAT(nombre,' ',apellido) AS 'Persona' FROM usuarios;
 /*saco el LENGTH*/
 SELECT LENGTH(nombre) FROM usuarios;
+/*Trim eliminar espacio en blancos*/
+SELECT TRIM(nombre) FROM usuarios;
+
+
