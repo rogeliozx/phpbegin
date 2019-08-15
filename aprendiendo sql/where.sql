@@ -36,5 +36,12 @@ SELECT nombre, apellidos FROM usuarios WHERE YEAR(fecha)=1996;
 SELECT nombre, apellidos FROM usuarios WHERE YEAR(fecha)!=1996 OR ISNULL(fecha);
 /*3. mostrar email usuarios apellidos tenga letra R*/
 SELECT email FROM usuarios WHERE apellidos LIKE '%s%' AND password='pedritosola';
-/*sacar todos los registros de la tabala sea par*/
+/*sacar todos los registros de la tabala sea impar o par*/
 SELECT * FROM usuarios WHERE (YEAR(fecha)%2!=0);
+/*sacar todos los registros tabla usuarios cuyo nombre tenga mas 5 letras
+y mostrar el nombre en mayusculas*/
+SELECT UPPER(nombre), apellidos FROM usuarios WHERE (LENGTH(nombre) > 5) AND (YEAR(fecha)<2020)
+/*order by*/
+SELECT * FROM usuarios ORDER BY fecha DESC;
+/*LIMIT*/
+SELECT * FROM usuarios LIMIT 1,2;
