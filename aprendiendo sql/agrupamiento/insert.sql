@@ -1,7 +1,7 @@
 /*insert categorias*/
-INSERT INTO categorias VALUES(null,'Accion')
-INSERT INTO categorias VALUES(null,'Rol')
-INSERT INTO categorias VALUES(null,'Deportes')
+INSERT INTO categorias VALUES(null,'Accion');
+INSERT INTO categorias VALUES(null,'Rol');
+INSERT INTO categorias VALUES(null,'Deportes');
 /*entradas*/
 INSERT INTO entradas VALUES(null,1,3,'la razon del porque es malo Fifa2017','es un juego de mierda',CURDATE());
 INSERT INTO entradas VALUES(null,1,2,'The witcher','buen juego inmersivo',CURDATE());
